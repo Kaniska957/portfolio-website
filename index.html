@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kaniska Portfolio</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:white;
+    line-height:1.6;
+}
+
+header{
+    background:#1e293b;
+    padding:20px;
+    text-align:center;
+}
+
+header h1{
+    color:#38bdf8;
+    font-size:40px;
+}
+
+section{
+    padding:40px;
+}
+
+h2{
+    color:#38bdf8;
+    margin-bottom:15px;
+}
+
+.card{
+    background:#1e293b;
+    padding:20px;
+    border-radius:10px;
+    margin-bottom:20px;
+}
+
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.skill{
+    background:#38bdf8;
+    color:black;
+    padding:10px 15px;
+    border-radius:20px;
+    font-weight:bold;
+}
+
+.project{
+    background:#1e293b;
+    padding:20px;
+    margin-bottom:15px;
+    border-radius:10px;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#1e293b;
+}
+
+button{
+    background:#38bdf8;
+    border:none;
+    padding:10px 20px;
+    border-radius:5px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+button:hover{
+    transform:scale(1.05);
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+    <h1>KANISKA P</h1>
+    <p>Computer Science Engineering Student | Data Science Enthusiast | Seeking Internship Opportunities</p>
+</header>
+<section style="text-align:center;padding:30px;">
+    <img src="profile.jpg"
+         width="200"
+         alt="Profile Photo"
+         style="border-radius:50%;
+                border:4px solid #38bdf8;
+                box-shadow:0px 0px 15px #38bdf8;">
+</section>
+
+<section>
+    <h2>About Me</h2>
+
+    <div class="card">
+        <p>
+            I am pursuing a B.E. in Computer Science and Engineering at
+            Sathyabama Institute of Science and Technology and a BS in
+            Data Science and Applications from IIT Madras.
+            I am passionate about Software Development, Machine Learning,
+            Data Science and Problem Solving.
+        </p>
+    </div>
+</section>
+
+<section>
+    <h2>Education</h2>
+
+    <div class="card">
+        <h3>B.E. Computer Science and Engineering</h3>
+        <p>Sathyabama Institute of Science and Technology</p>
+        <p>2024 - 2028</p>
+    </div>
+
+    <div class="card">
+        <h3>BS Data Science and Applications</h3>
+        <p>IIT Madras</p>
+    </div>
+</section>
+
+<section>
+    <h2>Skills</h2>
+
+    <div class="skills">
+        <div class="skill">Python</div>
+        <div class="skill">C</div>
+        <div class="skill">C++</div>
+        <div class="skill">Java</div>
+        <div class="skill">SQL</div>
+        <div class="skill">DSA</div>
+        <div class="skill">DBMS</div>
+        <div class="skill">Machine Learning</div>
+        <div class="skill">Git</div>
+        <div class="skill">GitHub</div>
+    </div>
+</section>
+
+<section>
+    <h2>Projects</h2>
+
+    <div class="project">
+        <h3>Student Management System</h3>
+
+        <p>
+            Developed a database-driven application using Python and MySQL.
+            Implemented CRUD operations for managing student records,
+            attendance tracking and academic information.
+        </p>
+    </div>
+
+    <div class="project">
+        <h3>Personal Portfolio Website</h3>
+
+        <p>
+            Built a responsive personal portfolio website using HTML, CSS
+            and JavaScript to showcase education, technical skills,
+            projects and certifications.
+        </p>
+    </div>
+</section>
+
+<section>
+    <h2>Certifications</h2>
+
+    <div class="card">
+        <ul>
+            <li>Cisco Certified Network Associate (CCNA)</li>
+            <li>IBM Data Science Professional Certificate</li>
+            <li>Microsoft Azure AI Fundamentals (AI-900)</li>
+        </ul>
+    </div>
+</section>
+
+<section>
+    <h2>Contact</h2>
+
+    <div class="card">
+
+        <p>Email: kaniska@example.com</p>
+        <p>Phone: +91 XXXXXXXXXX</p>
+
+        <p>
+            GitHub:
+            <a href="https://github.com/Kaniska957" target="_blank">
+                Kaniska957
+            </a>
+        </p>
+
+        <p>
+            LinkedIn:
+            <a href="https://linkedin.com/in/Kaniska Prabhakar"  target="_blank">
+                Kaniska Prabhakar
+            </a>
+        </p>
+
+        <br>
+
+        <a href="resume.pdf" download>
+            <button>Download Resume</button>
+        </a>
+
+        <br><br>
+
+        <button onclick="showMessage()">
+            Say Hello
+        </button>
+
+        <p id="message"></p>
+
+    </div>
+</section>
+
+        <button onclick="showMessage()">
+            Say Hello
+        </button>
+
+        <p id="message"></p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Kaniska P Portfolio</p>
+</footer>
+
+<script>
+
+function showMessage()
+{
+    document.getElementById("message").innerHTML =
+    "Thank you for visiting my portfolio website!";
+}
+
+</script>
+
+</body>
+</html>
